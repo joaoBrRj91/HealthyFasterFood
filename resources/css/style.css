@@ -1,3 +1,4 @@
+/***********************************Basic Setup************************************************************/
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +21,17 @@ html{
     margin: 0 auto;
 }
 
+
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/***********************************Basic Setup**************************************************/
+
+
+
 /*********************Begin- Header and navigation site*****************************************/
 header{
     position: relative;
@@ -34,7 +46,7 @@ header{
 /*For header in the images we need an style if reading is better soon
 we chance de font size, font wheight text trasnform  and the space of the
 letters and works. THIS IS A PATTERN OF THE WEB DESIGN*/
-h1{
+h1#title-header{
     margin: 0;
     margin-bottom: 20px;
     color: #fff;
@@ -105,4 +117,44 @@ h1{
 }
 
 
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 30px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*18px soon the font size default is 20px: 18/20 = 0.9em*/
+    font-size: 0.9em; 
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom: 2px solid #e67e22;
+}
+
 /*********************End - Header and navigation site*****************************************/
+
+
